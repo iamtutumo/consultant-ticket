@@ -21,7 +21,7 @@
                         </div>
 			<div data-role="content" data-theme="a">
 				<ul data-role="listview" data-filter="false" data-filter-placeholder="Find" data-filter-theme="a" data-inset="true">
-					<li><a href="ticket?id=<?php echo $id;?>" data-ajax="false">New Ticket</a></li>
+					<li><a href="ticket?id=<?php echo $id;?>" data-ajax="false">Today's Ticket</a></li>
 					<li><a href="contacts?id=<?php echo $id;?>" data-ajax="false">New Contact</a></li>
 				</ul>
 			</div>
