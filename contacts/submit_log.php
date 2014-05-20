@@ -10,9 +10,10 @@
 	$address = $_POST['address'];
 	$comments = $_POST['comments'];
 
+	$cid = $_POST['cid'];
 
 	include('../php/connect.php');
 
-	mysql_query("INSERT INTO $table (id, name, phone, email, address, comments) VALUES (NULL, \"$name\", \"$phone\", \"$email\", \"$address\", \"$comments\")") or die(mysql_error());
+	mysql_query("INSERT INTO $table (id, name, phone, email, address, comments, cid) VALUES (NULL, \"$name\", \"$phone\", \"$email\", \"$address\", \"$comments\", \"$cid\")") or die(mysql_error());
 	
 ?>

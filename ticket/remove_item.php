@@ -1,6 +1,6 @@
 
 <?php
-	include("../headers/header1.php");
+//	include("../headers/header1.php");
 
 	$table = "tickets";
  
@@ -23,6 +23,10 @@
                                 <h1 id="title">Item Has Been Removed</h1>
                                 <a data-icon="back" class="ui-btn-left" data-ajax="false" data-rel="back" data-ajax="false">Back</a>
 <!--                               <a href="#" data-icon="gear" class="ui-btn-right">Options</a> -->
-                        </div>
-		</div>
+
+                    </div>
+	<h2>
+<?php echo "Item has been removed.";?>
+  </h2>
+ 	</div>
 	</body>

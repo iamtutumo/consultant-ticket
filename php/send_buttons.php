@@ -43,7 +43,7 @@ function get_tiny_url($url)  {
 		$mail = $mail . "$email";
 		$mail = $mail . "?subject=Thank You For Your Business";
 		$mail = $mail . "&body=";
-		$mail = $mail . "Thank you for order today.  You receipt can be viewed here%0D%0A";
+		$mail = $mail . "Thank you for order today.  Your receipt can be viewed here%0D%0A";
 		$mail = $mail . "$url";
 	};
 

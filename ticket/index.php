@@ -3,6 +3,7 @@
 	$id = $_GET['id'];
 	$url="../index.php?id=$id";
 
+	$cid = $id;
 	if(!isset($id)){
 		header( 'Location: error.php' ) ;
 	}
@@ -26,20 +27,21 @@
 				$(".item").bind('click',function(){
 					var name = $("#name").val();
 					var item = $(this).html();
-			
+					var cid = <?php echo $cid;?>;	
 					var msg = item + " has been ordered for " + name;
 
 					var url="submit_log.php";
                                         $.post(url, { 
 						name: name, 
-						item: item 
+						item: item,
+						cid : cid
 					}).done(function( data ) {
+						alert(data);
                                         }).fail(function() {
                                                 alert( "error - Unable to Send" );
                                         });
 
 					
-					alert(msg);
 
 				});
 
@@ -70,7 +72,6 @@
 				?>
 
 				<button id="goto">View Ticket</button>
-                            </form>
 			</div>
 
 	</div>

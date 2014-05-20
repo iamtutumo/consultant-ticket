@@ -4,6 +4,7 @@
 	$table = "tickets";
 	$name =$_GET['name'];
         $date = $_GET['date'];
+	$cid = $_GET['id'];
 
 	$total = 0;
 
@@ -13,16 +14,16 @@
 	
 	include("../php/connect.php");
 
-	$sql= mysql_query("SELECT * FROM $table WHERE name LIKE \"$name\" AND date = \"$date\"");
+	$sql= mysql_query("SELECT * FROM $table WHERE name LIKE \"$name\" AND date = \"$date\" AND cid = \"$cid\"");
 
 	while($row = mysql_fetch_array($sql)){
 		$id = $row["id"];
 		$item = $row["item"];
 
-		print "<li>";
-		print "<a>$item</a>";
-		print "<a href='remove_item.php?item=$id' class='delete'>Delete</a>";
-		print "</li>";
+		print "<li>\n";
+		print "<a>$item</a>\n";
+		print "<a href='remove_item.php?item=$id' class='delete'>Delete</a>\n";
+		print "</li>\n";
 
 		$price = explode("$", $item);
 

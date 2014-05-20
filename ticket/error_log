@@ -1,0 +1,2 @@
+[20-May-2014 13:49:39 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home3/metalx/public_html/scripts/ticket/php/items.php on line 14
+[20-May-2014 13:50:25 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home3/metalx/public_html/scripts/ticket/php/items.php on line 15

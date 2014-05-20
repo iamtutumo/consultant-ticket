@@ -16,7 +16,6 @@
 			<script>
 			$(document).ready(function(){
 
-                                $("#title").html("Ticket for <?php echo $name; ?>");
 
 				$(".item").bind('click',function(){
 					var name = $("#name").val();
