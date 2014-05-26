@@ -22,6 +22,7 @@
 			<div data-role="content" data-theme="a">
 				<ul data-role="listview" data-filter="false" data-filter-placeholder="Find" data-filter-theme="a" data-inset="true">
 					<li><a href="ticket?id=<?php echo $id;?>" data-ajax="false">Today's Ticket</a></li>
+					<li><a href="contacts/view.php?id=<?php echo $id;?>" data-ajax="false">View Contact</a></li>
 					<li><a href="contacts?id=<?php echo $id;?>" data-ajax="false">New Contact</a></li>
 					<li><a href="items/add?id=<?php echo $id;?>" data-ajax="false">Add item to Inventory</a></li>
 				</ul>
